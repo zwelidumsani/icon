@@ -476,6 +476,9 @@ img{
 ====================================================================
 
 ***/
+.sponsors-section .auto-container .sec-title .title-inner {
+	margin-top:-53px;
+}
 
 .sec-title{
 	position:relative;
@@ -2413,6 +2416,7 @@ img{
 ***/
 
 .services-section{
+	top:230px;
 	position:relative;
 	padding:100px 0px 70px;
 	background-color:#f5f5f5;
@@ -4089,6 +4093,7 @@ img{
 
 .services-section-two{
 	position:relative;
+	top: 180px;
 	padding:100px 0px 70px;
 }
 
@@ -5580,11 +5585,13 @@ img{
 ***/
 
 .newsletter-section-two{
+	top:100px;
 	position:relative;
 	padding-top:75px;
 	background-attachment:fixed;
 	background-position:center center;
 	background-repeat:no-repeat;
+	margin-bottom:100px;
 }
 
 .newsletter-section-two:before{
