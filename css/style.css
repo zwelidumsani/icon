@@ -173,6 +173,8 @@ img{
 	text-align:center;	
 }
 
+
+
 /*List Style One*/
 
 .list-style-one{
@@ -2416,7 +2418,7 @@ img{
 ***/
 
 .services-section{
-	top:230px;
+	
 	position:relative;
 	padding:100px 0px 70px;
 	background-color:#f5f5f5;
