@@ -148,6 +148,12 @@
 	}
 }
 
+@media only screen and (max-width: 768px){
+	 .section-margin {
+		 margin-top: -40px;
+	}
+}
+
 @media only screen and (max-width: 1023px){
 	
 	.main-header .main-box .logo-box {
@@ -1022,9 +1028,17 @@
 		padding-top:50px;
 	}
 	
+	 .section-margin {
+		 margin-top: -40px;
+	}
+	
 }
 
 @media only screen and (max-width: 479px) {
+	
+	 .section-margin {
+		 margin-top: -40px;
+	 }
 	
 	.main-header .search-box-outer .dropdown-menu{
 		top:44px;	
@@ -1136,8 +1150,16 @@
 		width:100%;
 	}
 	
-}
-
-@media only screen and (max-width: 320px) {
+	 .section-margin {
+		 margin-top: -40px;
+	 }
 	
 }
+
+@media only screen and (max-width: 280px) {
+	 .section-margin {
+		 margin-top: -40px;
+	 }
+}
+
+
