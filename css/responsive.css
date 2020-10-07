@@ -15,8 +15,7 @@
 
 	.page-wrapper{
 		overflow:hidden;	
-	}
-	
+	}	
 }
 
 @media only screen and (max-width: 1140px){
@@ -1153,13 +1152,28 @@
 	 .section-margin {
 		 margin-top: -40px;
 	 }
-	
+	 
+	 iframe {
+		 height:400px;
+		 margin-bottom: 30px;
+	}
+	 .map-section {
+	     margin-bottom:40px;
+     }
 }
+
 
 @media only screen and (max-width: 280px) {
 	 .section-margin {
 		 margin-top: -40px;
 	 }
+	 iframe {
+	 width:280px;
+	 height:400px;
+	 margin-bottom: 25px;
+	}
+	
+    	
 }
 
 
