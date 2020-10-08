@@ -1398,6 +1398,7 @@ img{
 
 /* Main Menu */
 
+
 .main-menu{
 	position:relative;
 	float:left;
@@ -1499,7 +1500,7 @@ img{
 }
 
 .main-header.header-style-two .header-upper .upper-right .info-outer{
-	
+ 
 }
 
 .main-header .header-upper .upper-right .header-lower{
@@ -1686,7 +1687,7 @@ img{
 	top:0px;
 	width:100%;
 	padding:0px 0px;
-	background:#ffffff;
+	background:#ffaa00;
 	z-index:0;
 	border-bottom:1px solid #e8f1f7;
 	transition:all 500ms ease;
