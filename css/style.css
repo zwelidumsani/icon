@@ -186,6 +186,10 @@ img{
 	text-align:center;	
 }
 
+.project-topic{
+	margin-top:600px;
+}
+
 
 
 /*List Style One*/
@@ -6984,6 +6988,8 @@ img{
 	padding:95px 0px 95px;
 	margin-top:238px;
 	background-color: #f5f5f5;
+	margin-top: 205px;  
+    background-image:url(../images/background/4.jpg);	
 }
 
 .projects-page-section .filters{
