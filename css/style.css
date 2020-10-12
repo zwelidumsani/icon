@@ -6233,6 +6233,10 @@ img{
 	text-transform:capitalize;
 }
 
+.title {
+	color:grey;
+}
+
 .page-breadcrumb{
 	position:relative;
 }
