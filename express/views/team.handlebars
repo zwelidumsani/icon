@@ -1,5 +1,12 @@
 <section class="team-section section-margin">
 		<div class="auto-container">
+		
+		<div class="sec-title">
+							<div class="title-inner"  style = "background: #ffaa00; border-radius: 10px;">
+								<div class="title" style = 'color: white;'>ICON Staff</div>
+								<h2>Our Team</h2>
+							</div>
+						</div>
 			<div class="row clearfix">
 				
 				<!--Team Block-->
@@ -8,7 +15,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-4.jpg" alt="" /></a>
+						<img src="images/resource/team-5.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -29,7 +36,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-1.png" alt="" /></a>
+						<img src="images/resource/team-6.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -50,7 +57,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-2.png" alt="" /></a>
+						<img src="images/resource/team-7.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -71,7 +78,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-3.png" alt="" /></a>
+						<img src="images/resource/team-8.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -92,7 +99,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-5.jpg" alt="" /></a>
+						<img src="images/resource/team-5.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -113,7 +120,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-6.jpg" alt="" /></a>
+						<img src="images/resource/team-6.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -134,7 +141,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-7.jpg" alt="" /></a>
+						<img src="images/resource/team-7.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -155,7 +162,7 @@
 						<div class="border-one"></div>
 						<div class="border-two"></div>
 						<div class="image">
-							<a href="team.html"><img src="images/resource/team-8.jpg" alt="" /></a>
+						<img src="images/resource/team-8.jpg" alt="" />
 							<ul class="social-icons">
 								<li><a href="#"><span class="fa fa-facebook"></span></a></li>
 								<li><a href="#"><span class="fa fa-twitter"></span></a></li>
@@ -184,20 +191,33 @@
 					<!-- Sec Title -->
 					<div class="sec-title light">
 						<div class="title-inner">
-							<div class="title">News Letter</div>
-							<h2>Join Our Community</h2>
+							<div class="title">Don’t miss out on anything!</div>
+							<h2>Subscribe to our newsletter</h2>
 						</div>
 					</div>
-					<div class="text">Getting quality Industrial Care with Induzy is easier than ever. <br> Let us treat your loved ones like family!</div>
+					<div class="text"> Get the latest news about ICON construction company.<br> Learn more about current projects.</div>
 					
 					<!-- Newsletter Form -->
 					<div class="newsletter-form">
-						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
-							<div class="form-group clearfix">
-								<input type="email" name="email" value="" placeholder="Email Address" required>
-								<button type="submit" class="theme-btn btn-style-four">Submit Now</button>
-							</div>
-						</form>
+					     	{{#if TeamEmailSuccess}} 
+							 <div class = "alert alert-success" alert-dismissable style = "border-radius:10px;>
+								 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+								 <i class = "lnr lnr-checkmark-circle"></i>  Email address was successfully sent.</p>
+							 </div>	
+							{{/if}}
+			   
+				             {{#if TeamEmailError}} 
+						    <div class = "alert alert-danger" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-cross-circle"></i>  Could not send email.</p>
+						    </div>	
+				            {{/if}}
+							<form method="post" action="/email">
+								<div class="form-group clearfix">
+									<input type="email" name="email" value="" placeholder="Email Address" required>
+									<button type="submit" class="theme-btn btn-style-four">Submit Now</button>
+								</div>
+							</form>
 					</div>
 					
 				</div>
@@ -212,3 +232,31 @@
 			</div>
 		</div>			
 	</section>
+	
+	<!--Sponsors Section-->
+    <section class="sponsors-section">
+    	<div class="auto-container">
+		     <div class="sec-title">
+							<div class="title-inner"  style = "background: #ffaa00; border-radius: 10px;">
+								<div class="title" style = 'color: white;'>Get in Touch</div>
+								<h2>Contact Us</h2>
+							</div>
+						</div>
+        	
+				<div class="sponsors-outer">
+					<!--Sponsors Carousel-->
+					<ul class="sponsors-carousel owl-carousel owl-theme">
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+						<li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+					</ul>
+				</div>
+            
+        </div>
+    </section>
+    <!--End Sponsors Section-->

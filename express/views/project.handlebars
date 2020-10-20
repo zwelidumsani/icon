@@ -245,7 +245,20 @@
 
 					<!-- Newsletter Form -->
 					<div class="newsletter-form">
-						<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+					    {{#if ProjectEmailSuccess}} 
+						 <div class = "alert alert-success" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-checkmark-circle"></i>  Email address was successfully sent.</p>
+						 </div>	
+			            {{/if}}
+			   
+				        {{#if ProjectEmailError}} 
+						 <div class = "alert alert-danger" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-cross-circle"></i>  Could not send email.</p>
+						 </div>	
+				        {{/if}}
+						<form method="post" action="/email">
 							<div class="form-group clearfix">
 								<input type="email" name="email" value="" placeholder="Email Address" required>
 								<button type="submit" class="theme-btn btn-style-four">Submit Now</button>

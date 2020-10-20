@@ -110,9 +110,21 @@
 			
 			<!-- Faq Form -->
 			<div class="faq-form">
-					
+				     {{#if FaqEmailSuccess}} 
+						 <div class = "alert alert-success" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-checkmark-circle"></i>  Email address was successfully sent.</p>
+						 </div>	
+			            {{/if}}
+			   
+				        {{#if FaqEmailError}} 
+						 <div class = "alert alert-danger" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-cross-circle"></i>  Could not send email.</p>
+						 </div>	
+				        {{/if}}	
 				<!--Contact Form-->
-				<form method="post" action="http://ary-themes.com/html/buliten/contact.html">
+				<form method="post" action="/email">
 					<div class="row clearfix">
 					
 						<div class="form-group col-lg-6 col-md-6 col-sm-12">
