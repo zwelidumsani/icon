@@ -1,0 +1,188 @@
+<section class="faq-section section-margin">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title">
+				<div class="title-inner">
+					<div class="title">Most asked questions</div>
+					<h2>Some FAQ’s</h2>
+				</div>
+			</div>
+			
+			<div class="row clearfix">
+				
+				<!-- Accordian Column -->
+				<div class="accordian-column col-lg-7 col-md-12 col-sm-12">
+					<div class="inner-column">
+						
+						<!--Accordian Box-->
+						<ul class="accordion-box">
+
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>What is your service area?</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">We provide superior services around Eswatini.</div>
+									</div>
+								</div>
+							</li>
+
+							<!--Block-->
+							<li class="accordion block active-block">
+								<div class="acc-btn active"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>What are your credentials?</div>
+								<div class="acc-content current">
+									<div class="content">
+										<div class="text">Construction certificates include: <br>
+										 <a href = "/building-constractors">Certificate Works Contractor</a>,
+											<a href = "/certificate-of-membership">Certificate of Membership</a>,
+											<a href = "/civil-work-contractors">Civil Works Contractor</a> and
+											<a href = "/building-specialist-contractor">Building Specialist Works Contractor.</a><br>
+											All certificates were offered by the <a href = "https://www.cic.co.sz/">Construction Industry Council of Eswatini.</a>[CIC]
+										</div>
+									</div>
+								</div>
+							</li>
+							
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>How do you handle the dirty work?</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">We aim to leave the job site cleaner than when we arrived. Of course, what we do can be dirty. We tarp our work area, broom sweep and magnetic broom sweep the work area to get any possible debris.
+										</div>
+									</div>
+								</div>
+							</li>
+							
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>Do you use sub-contractors?</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Yes, you can view our Photo Gallery <a href = "/projects">here</a>.</div>
+									</div>
+								</div>
+							</li>
+							
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>Are you licensed?</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Yes, we are licensed to build everything we list in <a href = "/services">services</a></div>
+									</div>
+								</div>
+							</li>
+							
+							<!--Block-->
+							<li class="accordion block">
+								<div class="acc-btn"><div class="icon-outer"><span class="icon icon-plus fa fa-plus"></span> <span class="icon icon-minus fa fa-minus"></span></div>Will you bring samples to an appointment?</div>
+								<div class="acc-content">
+									<div class="content">
+										<div class="text">Yes, we bring samples as well an iPad to show additional projects.</div>
+									</div>
+								</div>
+							</li>
+						
+						</ul>
+						
+					</div>
+				</div>
+				
+				<!-- Image Column -->
+				<div class="image-column col-lg-5 col-md-12 col-sm-12">
+					<div class="inner-column wow slideInRight" data-wow-delay="300ms" data-wow-duration="1500ms">
+						<div class="image">
+							<img src="images/resource/faq-2.png" alt= ""/>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</section>
+	<!-- End Faq Section -->
+	
+	<!-- Faq Form Section -->
+	<section class="faq-form-section" style="background-image:url(images/background/11.jpg)">
+		<div class="auto-container">
+			<!-- Sec Title -->
+			<div class="sec-title light">
+				<div class="title-inner">
+					<div class="title">Ask A Question</div>
+					<h2>Contact Us</h2>
+				</div>
+			</div>
+			
+			<!-- Faq Form -->
+			<div class="faq-form">
+				     {{#if FaqEmailSuccess}} 
+						 <div class = "alert alert-success" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-checkmark-circle"></i>  Email address was successfully sent.</p>
+						 </div>	
+			            {{/if}}
+			   
+				        {{#if FaqEmailError}} 
+						 <div class = "alert alert-danger" alert-dismissable style = "border-radius:10px;>
+							 <p class= "pull-right"><button type = "button" class = "close" data-dismiss = "alert" aria-hidden = "true"><i class = "lnr lnr-cross-circle"></i></button>
+							 <i class = "lnr lnr-cross-circle"></i>  Could not send email.</p>
+						 </div>	
+				        {{/if}}	
+				<!--Contact Form-->
+				<form method="post" action="/email">
+					<div class="row clearfix">
+					
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<input type="text" name="name" placeholder="Name" required>
+						</div>
+						
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<input type="text" name="email" placeholder="Email" required>
+						</div>
+						
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<input type="text" name="phone" placeholder="Phone" required>
+						</div>
+						
+						<div class="form-group col-lg-6 col-md-6 col-sm-12">
+							<input type="text" name="subject" placeholder="Subject" required>
+						</div>
+						
+						<div class="form-group col-lg-12 col-md-12 col-sm-12">
+							<textarea name="message" placeholder="Question Detail"></textarea>
+						</div>
+						
+						<div class="form-group col-lg-12 col-md-12 col-sm-12">
+							<button class="theme-btn btn-style-two" type="submit" name="submit-form">Get A Quote</button>
+						</div>
+						
+					</div>
+				</form>
+			</div>
+			
+		</div>	
+	</section>
+	<!-- End Faq Form Section -->
+	
+	<!--Sponsors Section-->
+    <section class="sponsors-section">
+    	<div class="auto-container">
+        	
+            <div class="sponsors-outer">
+                <!--Sponsors Carousel-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/4.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/5.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/1.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/2.png" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="images/clients/3.png" alt=""></a></figure></li>
+                </ul>
+            </div>
+            
+        </div>
+    </section>
